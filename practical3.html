@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <form id="form1" runat="server">
+        <div>
+            <script lang="javascript">
+                function calculate(f) {
+                    f.result.value = eval(f.expr .value)
+                }
+            </script>
+
+            <input type="text" name="expr" size="15" />
+            <input type="button" value =calculate onclick="calculate(this.form)" />
+            <br/>
+            
+            <input type="text" name=result size="15" />
+            <input type="reset" value="clear" />
+        </div>
+    </form>
+</body>
+</html>
